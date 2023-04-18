@@ -1,0 +1,44 @@
+<div class="conatainer-fluid">
+    <div class="row">
+        <div class="col-sm-8 transfer">
+            <div class="card">
+                <div class="">
+                    <h1 class="bg-dark text-white p-2 text-center">TRANSFER AMOUNT </h1>
+                </div>
+                <form [formGroup]="transferForm" (ngSubmit)="transfer()">
+                    <div class="row mb-4">
+                        <div class="col-sm-6">
+                            <label class="form-label">Your Account Name</label>
+                            <input type="text" class="form-control" formControlName="customerName" readonly>
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="form-label">Your Account Number</label>
+                            <input type="number" class="form-control" formControlName="fromActNumber" readonly>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-sm-6">
+                            <label class="form-label">To Account</label>
+                            <input type="text" class="form-control" formControlName="holdername">
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="form-label">To Account Number</label>
+                            <input type="number" class="form-control" formControlName="toActNumber">
+                        </div>
+                    </div>
+                    <div class="row ta">
+                        <div class="col-sm-2">
+                            <label class="form-label amount">Amount</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="number" class="form-control" formControlName="amount">
+                        </div>
+                        <div class="col-sm-4">
+                            <button type="submit" class="btn btn-success">Transfer Amount</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

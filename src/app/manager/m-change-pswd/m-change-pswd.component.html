@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-sm-6 change">
+            <h1>Change Your Account Password</h1>
+            <hr>
+            <div class="card">
+                <div class="row">
+                    <form [formGroup]="mposswordForm" (ngSubmit)="changePswd()">
+                        <div class="form-group mb-4">
+                            <label class="mb-2">User Name</label>
+                            <input type="text" class="form-control" formControlName="username" readonly>
+
+                        </div>
+                        <div class="form-group mb-4">
+                            <label class="mb-2">Old Password</label>
+                            <input type="password" class="form-control" formControlName="password">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label class="mb-2">New Password</label>
+                            <input type="password" class="form-control" formControlName="newpassword">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn" >Change
+                                Password</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

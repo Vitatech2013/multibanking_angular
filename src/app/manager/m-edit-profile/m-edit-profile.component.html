@@ -1,0 +1,48 @@
+<div class="conatainer-fluid">
+    <div class="row">
+        <div class="" mat-dialog-close="true">
+            <h1 class="title">Edit And Update Your Details<span class="ic p-2"><mat-icon>close</mat-icon></span> </h1>
+        </div>
+        <div class="col-sm-11 transfer">
+            <div class="card">
+                <form [formGroup]="updateForm" (ngSubmit)="update()">
+                    <div class="row mb-4">
+                        <div class="col-sm-6">
+                            <label class="form-label">User Name</label>
+                            <input type="text" class="form-control" formControlName="username" readonly>
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="form-label">Mobile Number</label>
+                            <input type="number" class="form-control" formControlName="mobileno">
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-sm-6">
+                            <label class="form-label">Bank Name</label>
+                            <input type="text" class="form-control" formControlName="bankname" readonly>
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="form-label">Branch Name</label>
+                            <input type="text" class="form-control" formControlName="branchname" readonly>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-sm-6">
+                            <label class="form-label">Email id</label>
+                            <input type="email" class="form-control" formControlName="emailid">
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="form-label amount">Address</label>
+                            <textarea type="text" class="form-control" formControlName="address"></textarea>
+                        </div>
+                    </div>
+                    <div class="row ta">
+                        <button type="submit" class="btn btn-success" [disabled]="updateForm.invalid">Update Your
+                            Profile</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+<div class="container" *ngIf="!banks">
+    <div class="row table-responsive custom-scrollbar">
+        <table class="table">
+            <thead class="t-header sticky-top">
+                <tr>
+                    <th scope="col">S.No</th>
+                    <th scope="col">User Name</th>
+                    <th scope="col">Phone Number</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Email Id</th>
+                    <th>Date Of Birth</th>
+                    <th scope="col">View Bank Account</th>
+                </tr>
+            </thead>
+            <tbody class="t-body">
+                <tr *ngFor="let m of allUsers index as i">
+                    <td>{{i+1}}</td>
+                    <td>{{m.username}}</td>
+                    <td class="text text-success">{{m.mobileno}}</td>
+                    <td>{{m.address}}</td>
+                    <td class="text text-primary">{{m.emailid}}</td>
+                    <td>{{m.dob}}</td>
+                    <td>
+                        <button class="btn btn-success btn-sm" (click)="showAccount(m)" >
+                           View Details
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+        <div class="container" *ngIf="banks">
+            <div class="row table-responsive custom-scrollbar">
+                <table class="table">
+                    <thead class="t-header sticky-top">
+                        <tr>
+                            <th scope="col">S.No</th>
+                            <th scope="col">User Name</th>
+                            <th scope="col">Full Name</th>
+                            <th scope="col">Account Number</th>
+                            <th scope="col">Bank Name</th>
+                            <th scope="col">Branch Name</th>
+                            <th scope="col">IFSC Code</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Action</th>
+    
+                        </tr>
+                    </thead>
+                    <tbody class="t-body">
+                        <tr *ngFor="let m of customer index as i">
+                            <td>{{i+1}}</td>
+                            <td>{{m.customername}}</td>
+                            <td>{{m.fullname}}</td>
+                            <td class="text text-success"><b>{{m.accountno}}</b></td>
+                            <td>{{m.bankname}}</td>
+                            <td>{{m.branchname}}</td>
+                            <td class="text text-primary"><b>{{m.ifsccode}}</b></td>
+                            <td><b>{{m.status}}</b></td>
+                            <td>
+                                <button mat-icon-button (click)="transactions(m)">
+                                    <span class="material-symbols-outlined">
+                                        arrow_forward_ios
+                                    </span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>

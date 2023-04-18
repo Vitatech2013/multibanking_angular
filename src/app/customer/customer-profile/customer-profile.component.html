@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 profile">
+            <div class="card">
+                <div class="card-header">
+                    <span>Your Profile Details</span>
+                </div>
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <th>User Name</th>
+                                <td>{{user.username}}</td>
+                            </tr>
+                            <tr>
+                                <th>Mobile Number</th>
+                                <td class="text text-success">{{user.mobileno}}</td>
+                            </tr>
+                            <tr>
+                                <th>Email id</th>
+                                <td class="text text-primary">{{user.emailid}}</td>
+                            </tr>
+                            <tr>
+                                <th>Date Of Birth</th>
+                                <td>{{user.dob}}</td>
+                            </tr>
+                            <tr>
+                                <th>Address</th>
+                                <td>{{user.address}}</td>
+                            </tr>
+                            
+                        </tbody>
+                       
+                       
+                    </table>
+                </div>
+                <div class="mt-1 mb-4 text-center">
+                    <button class="btn btn-primary" (click)="updateProfile(user)"> Edit And Update Your Profile</button>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>

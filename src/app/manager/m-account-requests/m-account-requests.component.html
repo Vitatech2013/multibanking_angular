@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row table-responsive custom-scrollbar">
+        <table class="table">
+            <thead class="t-header sticky-top">
+                <tr>
+                    <th scope="col">S.No</th>
+                    <th scope="col">User Name</th>
+                    <th scope="col">Phone Number</th>
+                    <th scope="col">Email Id</th>
+                    <th scope="col">Bank</th>
+                    <th scope="col">Branch</th>
+                    <th scope="col">IFSC Code</th>
+                    <th scope="col">Account Number</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody class="t-body">
+                <tr *ngFor="let m of allUsers index as i">
+                    <td>{{i+1}}</td>
+                    <td>{{m.customername}}</td>
+                    <td class="text text-success">{{m.mobileno}}</td>
+                    <td class="text text-primary">{{m.emailid}}</td>
+                    <td>{{m.bankname}}</td>
+                    <td>{{m.branchname}}</td>
+                    <td>{{m.ifsccode}}</td>
+                    <td>{{m.accountno}}</td>
+                    <td class="text text-muted"><b>{{m.status}}</b></td>
+                    <td>
+                        <button mat-icon-button (click)="updateStatus(m)">
+                            <span class="material-symbols-outlined">
+                                upgrade
+                                </span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

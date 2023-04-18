@@ -1,0 +1,37 @@
+<div class="container-fluid">
+<div class="row">
+        <div class="banks">
+            <div class="text-center p-1 bg-dark text-light">
+                <h1>All Added Banks</h1>
+            </div>
+            <div class="table-responsive custom-scrollbar">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">S. No</th>
+                            <th scope="col">Bank Name</th>
+                            <th scope="col">Branch Name</th>
+                            <th scope="col">IFSC Code</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let b of allBanks  index as i">
+                            <th scope="row">{{i+1}}</th>
+                            <td>{{b.bankname}}</td>
+                            <td>{{b.branchname}}</td>
+                            <td>{{b.ifsccode}}</td>
+                            <td><button mat-icon-button color="primary" (click)="editBank(b)">
+                                    <mat-icon>edit</mat-icon>
+                                </button>
+                                <button mat-icon-button color="warn" (click)="deleteBank(b)">
+                                    <mat-icon>delete</mat-icon>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

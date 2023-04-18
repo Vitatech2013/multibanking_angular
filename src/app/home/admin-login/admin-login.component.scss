@@ -7,16 +7,26 @@
     margin: 100px auto;
     text-align: center;
 }
-.card-header{
-background-color: rgb(18, 43, 31);
-color: white;
+.card{
+    border: none;
+    background-color: rgb(235, 235, 232);
 }
-.card-body{
-background-color: whitesmoke;
+h1{
+    font-family: 'Times New Roman';
 }
+
+// .card-body{
+// background-color: whitesmoke;
+// }
 label{
     font-weight: bold;
+    font-family: 'Times New Roman';
+    font-size: 18px;
 }
 .btn{
     width: 50%;
+    background-color: rgb(15, 46, 147);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
 }

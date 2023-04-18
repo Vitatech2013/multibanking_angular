@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+
+        <h1 class="title">Login With Bank Details</h1>
+        <div class="col-sm-6 login">
+            <div class="card">
+                <form [formGroup]="bankLogin" (ngSubmit)="login()">
+                    <div class="form-outline mb-4">
+                        <label class="form-label">User Name</label>
+                        <input type="text" class="form-control" formControlName="customername"/>
+                    </div>
+                    <div class="form-outline mb-4">
+                        <label class="form-label">Bank Account Number</label>
+                        <input type="text" class="form-control" formControlName="accountno" />
+                    </div>
+                    <div class="form-outline mb-4">
+                        <label class="form-label">Bank Password</label>
+                        <input type="password" class="form-control" formControlName="password" />
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn mb-4 mt-2">Sign in</button>
+                    </div>
+
+                    <div class="links">
+                        <span><a routerLink="/home/new-account">Register If New Bank Account</a></span>
+                        <!-- <span class="ereg"><a routerLink="/home/existing-account">Register if Existing Bank
+                                Account</a></span> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

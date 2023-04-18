@@ -1,0 +1,35 @@
+
+.title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: rgb(135, 45, 220);
+}
+hr{
+    margin-bottom: 30px;
+    border-top: 2px solid rgb(5, 0, 7);
+}
+.bankform{
+    margin: 40px auto;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Times New Roman';
+}
+input{
+    border: 2px solid rgb(106, 106, 120);
+}
+textarea{
+    border: 2px solid rgb(106, 106, 120);
+}
+select{
+    border: 2px solid rgb(106, 106, 120);
+}
+.card{
+    padding: 50px;
+}
+.btn{
+    width: 30%;
+    margin: 30px 10px 10px 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+}

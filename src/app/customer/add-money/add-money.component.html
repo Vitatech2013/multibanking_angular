@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8 money">
+            <h1 class="bg-dark text-white text-center p-2">Add Money To Your Account</h1>
+            <form [formGroup]="addForm" (ngSubmit)="add()">
+                <div class="row mt-4 text-center">
+                    <div class="col-sm-4">
+                        <h2>Amount To Add : </h2>
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" placeholder="Enter Amount" formControlName="amount">
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="submitf" class="btn btn-info btn-sm w-50">Add</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

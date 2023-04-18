@@ -1,0 +1,29 @@
+
+.table {
+    width: 100%;
+    // margin: auto;
+  }
+  .table > :not(caption) > * > * {
+    padding: 10px;
+    font-size: 15px;
+    vertical-align: middle;
+  }
+  .t-header {
+    background-color: rgb(145, 73, 147);
+    color: white;
+  }
+  .t-body {
+    background-color: white;
+  }
+  .custom-scrollbar {
+    position: relative;
+    overflow: auto;
+  }
+  .material-symbols-outlined{
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(39, 22, 168);
+    padding: 5px;
+    border-radius: 20px;
+    color: whitesmoke;
+  }

@@ -6,50 +6,41 @@
                     <h1>Customer Registration</h1>
                 </div>
                 <div class="card-body">
-                    <form>
+                    <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
                         <div class="row mb-2">
                             <div class="col">
                                 <div class="form-outline">
                                     <label class="form-label">User Name</label>
-                                    <input type="text" class="form-control" />
+                                    <input type="text" class="form-control" formControlName="username" />
                                 </div>
                             </div>
                         </div>
-
                         <div class="form-outline mb-2">
                             <label class="form-label">Password</label>
-                            <input type="password" class="form-control" />
+                            <input type="password" class="form-control" formControlName="password" />
                         </div>
 
                         <div class="form-outline mb-2">
                             <label class="form-label">Phone Number</label>
-                            <input type="text" class="form-control" />
+                            <input type="text" class="form-control" formControlName="mobileno" />
                         </div>
                         <div class="form-outline mb-2">
                             <label class="form-label">Address</label>
-                            <textarea class="form-control" rows="2"></textarea>
+                            <textarea class="form-control" formControlName="address" rows="2"></textarea>
                         </div>
                         <div class="form-outline mb-2">
                             <label class="form-label">Email</label>
-                            <input type="email" id="form6Example5" class="form-control" />
+                            <input type="email" class="form-control" formControlName="emailid" />
                         </div>
                         <div class="form-outline mb-2">
                             <label class="form-label">Date Of Birth</label>
                             <input type="date" id="date" placeholder="Enter Date" class="form-control"
-                                formControlName="date">
+                                formControlName="dob">
                         </div>
-
-
-
-
-
-
-                        <button type="submit" class="btn btn-primary btn-block mb-2">Place order</button>
+                        <button type="submit" class="btn mt-2 mb-2">Register</button>
                     </form>
                 </div>
             </div>
-
-
         </div>
     </div>
 </div>

@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+        <form [formGroup]="addbankForm" (ngSubmit)="addBanks()">
+            <div class="col-sm-7 bankform">
+                <div class="title">
+                    <h1>Add Banks</h1>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label for="inputPassword6" class="col-form-label">Bank Name :</label>
+                    </div>
+                    <div class="col-sm-9 mb-4">
+                        <input type="text" class="form-control" formControlName="bankname">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label for="inputPassword6" class="col-form-label">Branch Name :</label>
+                    </div>
+                    <div class="col-sm-9 mb-4">
+                        <input type="text" class="form-control" formControlName="branchname">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label for="inputPassword6" class="col-form-label">IFSC Code :</label>
+                    </div>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" formControlName="ifsccode">
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success btn-sm" [disabled]="addbankForm.invalid">Add
+                        Bank</button>
+                </div>
+                <hr>
+            </div>
+
+        </form>
+    </div>
+</div>
+

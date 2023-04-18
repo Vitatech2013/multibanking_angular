@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row table-responsive custom-scrollbar">
+        <table class="table">
+            <thead class="t-header sticky-top">
+                <tr>
+                    <th scope="col">S.No</th>
+                    <th scope="col">User Name</th>
+                    <th scope="col">Phone Number</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Email Id</th>
+                    <th scope="col">Bank Name</th>
+                    <th scope="col">Branch</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody class="t-body">
+                <tr *ngFor="let m of allManagers index as i">
+                    <td>{{i+1}}</td>
+                    <td>{{m.username}}</td>
+                    <td class="text text-success">{{m.mobileno}}</td>
+                    <td>{{m.address}}</td>
+                    <td class="text text-primary">{{m.emailid}}</td>
+                    <td>{{m.bankname}}</td>
+                    <td>{{m.branchname}}</td>
+                    <td>
+                        <button mat-icon-button color="warn" (click)="deleteManager(m)">
+                            <mat-icon>delete</mat-icon>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

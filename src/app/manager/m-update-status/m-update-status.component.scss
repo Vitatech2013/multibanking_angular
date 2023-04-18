@@ -1,0 +1,54 @@
+.title {
+    margin-top: 10px;
+    color: rgb(13, 18, 95);
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.login {
+    margin: 0px auto;
+}
+
+.card {
+    font-weight: bold;
+    font-size: 15px;
+    padding: 30px;
+    border: 1px solid;
+    margin-bottom: 30px;
+}
+
+.btn {
+    width: 50%;
+    background-color: rgb(39, 75, 3);
+    color: whitesmoke;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+input {
+    border: 1px solid rgb(55, 44, 62);
+    border-radius: 15px;
+}
+
+select {
+    border: 1px solid rgb(55, 44, 62);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(57, 57, 150);
+    font-family: 'Times New Roman';
+    font-size: 18px;
+}
+
+.ereg {
+    float: right;
+}
+
+.ic {
+    float: right;
+    color: red; 
+}
