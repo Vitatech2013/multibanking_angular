@@ -1,3 +1,7 @@
+<div class="" mat-dialog-close="true">
+    <h1 class="">Customer Transactions Details <span
+            class="ic"><mat-icon>close</mat-icon></span> </h1>
+</div>
 <div class="container">
     <div class="row table-responsive custom-scrollbar">
         <table class="table">
@@ -20,7 +24,7 @@
                     <td>{{m.holdername}}</td>
                     <td>{{m.toActNumber}}</td>
                     <td class="text text-primary"><b>{{m.amount}}</b></td>
-                    <td class="text text-muted">{{m.date}}</td>
+                    <td class="text text-muted">{{m.date | date:'EEEE dd-mm-yyyy [ hh:mm a ]'}}</td>
 
                 </tr>
             </tbody>

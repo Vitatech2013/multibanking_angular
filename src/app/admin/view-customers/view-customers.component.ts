@@ -40,4 +40,7 @@ export class ViewCustomersComponent implements OnInit {
       data: a,
     });
   }
+  back() {
+    window.location.reload();
+  }
 }

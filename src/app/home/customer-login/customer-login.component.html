@@ -1,13 +1,13 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-4 login">
+        <div class="col-sm-6 login">
             <div class="card">
                 <div class="card-header">
                     <h1>Customer Login</h1>
                 </div>
                 <div class="card-body">
                     <form [formGroup]="loginForm" (ngSubmit)="login()">
-                        <div class="form-outline mb-2">
+                        <div class="form-outline mb-4">
                             <label class="form-label">User Name</label>
                             <input type="email" class="form-control " formControlName="username" />
 

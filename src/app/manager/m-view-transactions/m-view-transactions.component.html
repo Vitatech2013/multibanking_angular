@@ -20,8 +20,7 @@
                     <td>{{m.holdername}}</td>
                     <td>{{m.toActNumber}}</td>
                     <td class="text text-primary"><b>{{m.amount}}</b></td>
-                    <td class="text text-muted">{{m.date}}</td>
-
+                    <td class="text text-muted">{{m.date | date:'EEEE dd-mm-yyyy [ hh:mm a ]'}}</td>
                 </tr>
             </tbody>
         </table>

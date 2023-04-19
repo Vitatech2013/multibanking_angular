@@ -1,7 +1,12 @@
 
-// .container-fluid{
-//     background-image: url("/assets/images/Banking.jpg");
-// }
+.container-fluid{
+    background-color: rgb(235, 235, 232);;
+    height: 700px;
+    // background-image: url("/assets/images/Banking.jpg");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // height: 701px;
+}
 
 .login{
     margin: 100px auto;
@@ -9,15 +14,16 @@
 }
 .card{
     border: none;
-    background-color: rgb(235, 235, 232);
+   
+}
+input{
+    border: 2px solid rgb(51, 34, 91);
 }
 h1{
     font-family: 'Times New Roman';
 }
 
-// .card-body{
-// background-color: whitesmoke;
-// }
+
 label{
     font-weight: bold;
     font-family: 'Times New Roman';

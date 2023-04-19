@@ -3,7 +3,8 @@
 }
 
 .sidenav {
-  width: 200px;
+  width: 250px;
+  background-color: rgb(244, 247, 250);
 }
 
 .sidenav .mat-toolbar {
@@ -15,4 +16,8 @@
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+.active{
+  background-color: rgb(183, 222, 209);
 }
